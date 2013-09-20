@@ -5,6 +5,8 @@ Visualization tool for a surface ocean drift forecast
 
 Please, cite: Otero et al., 2013. Visualization tool for a surface ocean drift forecast. Environmental Modelling & Software. Submitted
 
+You can watch a video at http://www.youtube.com/watch?v=MZJFnWjX1yc
+
 Here you can find *.pde files to run this application in Processing. Start reading Alavai.pde.
 
 // WHAT THIS APPLET DOES:
