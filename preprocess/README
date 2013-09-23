@@ -1,0 +1,27 @@
+These Matlab scripts are used to process ROMS_AGRIF output files, with the aim of being used in 
+the Alavai application.
+
+If you intend to adapt Alavai to your own configuration, you will need to modify these scripts
+to your convenience. However, we provide them to help you in this task. These scripts also clarify
+the preprocessing part of Alavai.
+
+Here it is a brief description of the steps that we perform in our operational configuration, that
+hopefully, will help you to understand this process:
+
+1) Everyday, our ROMS_AGRIF configuration is executed generating one file per day. We use meteorological
+predictions from the WRF model executed by an external institution.
+
+2) We obtain 4 files, one for today and the others for the 3-day horizon forecast. These files store
+hourly data.
+
+3) ROMS history files are converted in CF-Complaint by using roms2cf_geopotential.m
+In the horizontal, this script reinterpolates "u" and "v" velocities to rho_points. 
+In the vertical, data are interpolated to constant depths.
+
+4) ROMS CF-Complaint files are uploaded to our thredds. 
+
+5) We combine ROMS CF-Complaint and WRF files to create a drift file to use in Alavai. See the script roms2drift.m
+One file contains exclusively the surface currents (1m depth) and it is named Raia_drift_passive.nc
+Another file contains the same information plus 3% of the wind speed and it is named Radia_drift_oil.nc
+
+6) The drift files are uploaded to the Thredds server, where the "Alavai" application will connect for getting data.
