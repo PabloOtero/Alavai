@@ -1,7 +1,9 @@
 Alavai
 ======
 
-Citation: Otero et al., 2013. Visualization tool for a surface ocean drift forecast. Environmental Modelling & Software. Submitted
+Citation: Otero et al., 2015. A surface ocean trajectories visualization tool and its initial application to the Galician coast. Environmental Modelling & Software, 66:12-16, DOI: 10.1016/j.envsoft.2014.12.006
+
+https://www.researchgate.net/publication/270487483_A_surface_ocean_trajectories_visualization_tool_and_its_initial_application_to_the_Galician_coast
 
 ### What is Alavai?
 Alavai is a interactive visualization tool for surface ocean drift forecasts
