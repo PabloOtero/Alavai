@@ -15,7 +15,7 @@ Alavai is a interactive visualization tool for surface ocean drift forecasts
 This program plots trajectories of Lagrangian particles at both 1-m depth and 1-m depth + 3%
 of the wind speed. The current fields are obtained from operational results of the ROMS model
 operated and mantained by the Modelling Group of the Instituto Español de Oceanografía, Spain. Data
-are stored in the Thredds of this group at http://centolo.co.ieo:8080/thredds
+are stored in the Thredds of this group at http://centolo.co.ieo.es:8080/thredds
 with 1 h of temporal resolution and ~1.3 km of horizontal resolution. Meterological data are
 obtained from the WRF model operated and mantained by MeteoGalicia (http://www.meteogalicia.es).
 In the code folder you can find the *.pde files written in the [Processing](http://processing.org/) programming language. Start reading Alavai.pde.
